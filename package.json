@@ -2,7 +2,7 @@
   "name": "@greenly/gatsby-remark-figure-caption",
   "description": "transform markdown image to figure with caption element",
   "homepage": "https://github.com/zielak/gatsby-remark-figure-caption",
-  "version": "2.0.0",
+  "version": "3.0.0-0",
   "author": "Leonardo Dino",
   "contributors": [
     {
