@@ -49,7 +49,9 @@ const createElement = (type, props, ...args) =>
 const replace = (source) => ({
 	with: (target) => {
 		for (let property in source) {
-			if (!target.hasOwnProperty(property)) delete source[property];
+			if (!Object.prototype.hasOwnProperty.call(target, property)) {
+				delete source[property];
+			}
 		}
 		Object.assign(source, target);
 	},

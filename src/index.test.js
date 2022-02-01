@@ -1,4 +1,3 @@
-require("object.entries/shim")(); // gatsby supports node v6
 const Remark = require("remark");
 const toHAST = require("mdast-util-to-hast");
 const find = require("unist-util-find");

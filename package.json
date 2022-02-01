@@ -20,14 +20,14 @@
     "remark"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/index.js",
   "peerDependencies": {
     "gatsby": "^4.6.1",
     "gatsby-transformer-remark": "^5.6.0"
   },
   "repository": "https://github.com/zielak/gatsby-remark-figure-caption",
   "scripts": {
-    "build": "babel src --out-dir . --ignore '**/*.test.js' -s",
+    "build": "babel src --out-dir dist --ignore '**/*.test.js' -s",
     "prepare": "cross-env NODE_ENV=production npm run build",
     "watch": "npm run build -w",
     "lint": "eslint src fixtures ",
@@ -40,11 +40,8 @@
   "bugs": {
     "url": "https://github.com/zielak/gatsby-remark-figure-caption/issues"
   },
-  "dependencies": {
-    "@babel/runtime": "^7.16.7",
-    "unist-util-visit": "^4.1.0"
-  },
   "devDependencies": {
+    "@babel/runtime": "^7.16.7",
     "@babel/cli": "^7.16.8",
     "@babel/core": "^7.16.12",
     "@babel/eslint-parser": "^7.16.5",
@@ -55,6 +52,8 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^27.4.6",
     "cross-env": "^7.0.3",
+    "core-js": "^2.6.12",
+    "unist-util-visit": "^4.1.0",
     "eslint": "^8.8.0",
     "eslint-plugin-jest": "^26.0.0",
     "eslint-plugin-react": "^7.28.0",
