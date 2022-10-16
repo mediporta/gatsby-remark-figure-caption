@@ -1,8 +1,8 @@
 {
-  "name": "@greenly/gatsby-remark-figure-caption",
+  "name": "@mediporta/gatsby-remark-figure-caption",
   "description": "transform markdown image to figure with caption element",
   "homepage": "https://github.com/zielak/gatsby-remark-figure-caption",
-  "version": "3.0.0-0",
+  "version": "3.0.0",
   "author": "Leonardo Dino",
   "contributors": [
     {
@@ -25,7 +25,7 @@
     "gatsby": "^4.6.1",
     "gatsby-transformer-remark": "^5.6.0"
   },
-  "repository": "https://github.com/zielak/gatsby-remark-figure-caption",
+  "repository": "https://github.com/mediporta/gatsby-remark-figure-caption",
   "scripts": {
     "build": "babel src --out-dir dist --ignore '**/*.test.js' -s",
     "prepare": "cross-env NODE_ENV=production npm run build",
